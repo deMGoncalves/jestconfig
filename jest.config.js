@@ -24,8 +24,5 @@ module.exports = {
   testMatch: [
     '**/?(*.)+(spec).js?(x)'
   ],
-  transform: {
-    '^.+\\.(js|jsx)$': 'ts-jest'
-  },
   verbose: true
 }
