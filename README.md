@@ -1,2 +1,2 @@
 # jestconfig
-jestConfig para ser extendido em seu projetos
+jestConfig para ser estendido em seu projetos
