@@ -2,8 +2,7 @@ module.exports = {
   bail: true,
   collectCoverage: true,
   collectCoverageFrom: [
-    'src/**/*.{js,jsx}',
-    '!src/**/*.spec.{js,jsx}'
+    'src/**/*.{js,jsx}'
   ],
   coveragePathIgnorePatterns: [
     '/node_modules/'
@@ -19,10 +18,19 @@ module.exports = {
       statements: 0
     }
   },
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1',
+  },
   preset: 'ts-jest',
   testEnvironment: 'node',
   testMatch: [
     '**/?(*.)+(spec).js?(x)'
+  ],
+  transform: {
+    '^.+\\.(js|jsx)$': 'ts-jest'
+  },
+  transformIgnorePatterns: [
+    '/node_modules/'
   ],
   verbose: true
 }
