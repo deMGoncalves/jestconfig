@@ -19,12 +19,8 @@ module.exports = {
       statements: 0
     }
   },
-  globals: {
-    'ts-jest': {
-      packageJson: 'package.json',
-      tsConfig: 'tsconfig.json'
-    }
-  },
+  preset: 'ts-jest',
+  testEnvironment: 'node',
   testMatch: [
     '**/?(*.)+(spec).js?(x)'
   ],
