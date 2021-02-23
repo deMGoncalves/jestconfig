@@ -1,2 +1,2 @@
 # jestconfig
-$description
+jestConfig para ser estendido em seu projetos
